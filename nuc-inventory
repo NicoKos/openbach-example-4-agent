@@ -1,0 +1,9 @@
+[controller]
+10.10.0.5 openbach_name=ctlr
+
+[agent]
+10.10.0.1 openbach_name=nuc1
+10.10.0.2 openbach_name=nuc2
+10.10.0.3 openbach_name=nuc3
+10.10.0.4 openbach_name=nuc4
+
