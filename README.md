@@ -22,8 +22,8 @@ If you encounter python-version related errors, we recommend you to either:
   * Use virtual env
   * Update your paths on the installation machine, e.g. 
     * `vim ~/.bashrc`
-      * add `export PYTHONPATH="$PYTHONPATH:/home/kuhnn/Desktop/openbach-extra/apis"`
-      * add `export PATH="$PATH:/home/kuhnn/.local/bin"`
+      * add `export PYTHONPATH="$PYTHONPATH:/home/star/Desktop/openbach-extra/apis"`
+      * add `export PATH="$PATH:/home/star/.local/bin"`
     * source ~/.bashrc 
 * On the target machines
   * Update the PYTHONPATH to use the correct version of python, e.g.
