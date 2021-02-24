@@ -18,19 +18,19 @@ Based on this, the user can either use the auditorium scripts, the IHM or the pr
 
 If you encounter python-version related errors, we recommend you to either: 
 
-* On the installation machine
+* On the installation machine (nuc5) 
+  * You may want to disabley key checking in ansible `export ANSIBLE_HOST_KEY_CHECKING=False`
   * Use virtual env
   * Update your paths on the installation machine, e.g. 
     * `vim ~/.bashrc`
       * add `export PYTHONPATH="$PYTHONPATH:/home/star/Desktop/openbach-extra/apis"`
       * add `export PATH="$PATH:/home/star/.local/bin"`
     * source ~/.bashrc 
-* On the target machines
+* On the target machines (nuc1 .. nuc4)
   * Update the PYTHONPATH to use the correct version of python, e.g.
     * `vim ~/.bashrc`
       * add `export PYTHONPATH="$PYTHONPATH:/usr/bin/python3"`
     * source ~/.bashrc 
-
 
 Five NUCs are exploited and the network architecture is showed below.
 Each NUC exploits `Ubuntu 20.04` with the username `star` and the root password `azerty123`.
