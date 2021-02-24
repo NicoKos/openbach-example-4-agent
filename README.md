@@ -10,9 +10,9 @@ This project does not prevent the reader from looking at [OpenBACH installation 
 By cloning the current repository, the user can:
 
 1. run the `00-install.sh` script to install OpenBACH
-1. run the `10-setup-project.sh` script to set up an OpenBACH project
+1. run the `10-setup.sh` script to set up an OpenBACH project
 
-Based on this, the user can either use the auditorium scripts, the IHM or the provided scripts `20-run-executors.sh` and `30-run-quic.sh` to build and run scenarios.
+Based on this, the user can either use the auditorium scripts, the IHM or the provided scripts `20-run-quic.sh` to build and run scenarios based on `quic_configure_link` example.
 
 ## Installation details
 

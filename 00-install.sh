@@ -3,7 +3,7 @@
 # Checking the ansible version that is used 
 echo "################################################"
 echo "Check ansible version - the results should be"
-echo "ansible 2.7.6"
+echo "ansible 2.10.5"
 echo "################################################"
 ansible --version
 
