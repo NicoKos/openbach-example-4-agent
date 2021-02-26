@@ -1,10 +1,7 @@
 #!/bin/bash
 
-nuc1IP=$1
-nuc2IP=$2
-nuc3IP=$3
-nuc4IP=$4
-joblist=$5
+inventorysimplified=$1
+joblist=$2
 
 echo "================================="
 echo "Delete Jobs from Controller"
@@ -31,7 +28,8 @@ python3 add_job.py -f ../../../openbach-extra/externals_jobs/stable_jobs/service
 python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/network/tc_configure_link tc_configure_link 
 python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/post_processing/histogram histogram 
 python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/post_processing/time_series time_series
-python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/service/web_browsing_qoe web_browsing_qoe 
+python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/service/web_browsing_qoe web_browsing_qoe
+python3 add_job.py -f ../../../openbach/src/jobs/core_jobs/service/apache2 apache2
 python3 add_job.py -f ../../../openbach-extra/externals_jobs/stable_jobs/transport/nuttcp nuttcp 
 python3 add_job.py -f ../../../openbach-extra/externals_jobs/stable_jobs/service/voip_qoe/voip_qoe_dest voip_qoe_dest 
 python3 add_job.py -f ../../../openbach-extra/externals_jobs/stable_jobs/service/voip_qoe/voip_qoe_src voip_qoe_src
@@ -47,12 +45,12 @@ echo "================================="
 echo "Uninstall then install jobs on agents"
 echo "================================="
 
-for agents in $nuc1IP $nuc2IP $nuc3IP $nuc4IP
+while read agentip agententity
 do
 	for job in $joblist
 	do
-		python3 uninstall_jobs.py -j $job -a $agents
-		python3 install_jobs.py -j $job -a $agents
+		python3 uninstall_jobs.py -j $job -a $agentip
+		python3 install_jobs.py -j $job -a $agentip
 	done
-done
+done < $inventorysimplified
 cd ../../../openbach-example-4-agent/

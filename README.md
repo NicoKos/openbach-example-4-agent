@@ -37,3 +37,25 @@ Each NUC exploits `Ubuntu 20.04` with the username `star` and the root password 
 
 ![Network architecture](nuc-archi.png)
 
+## netplan
+
+```
+network:
+  ethernets:
+    enp0s25:
+      match:
+        macaddress: 94:c6:91:18:bd:5e
+      addresses:
+      - 10.10.0.1/24
+      gateway4: 10.10.0.1
+      set-name: ensA
+    enx503eaa3bcb9c:
+      match:
+        macaddress: 50:3e:aa:3b:cb:9c
+      addresses:
+      - 10.10.1.1/24
+      gateway4: 10.10.1.1
+      set-name: ensI
+  version: 2
+  renderer: NetworkManager
+```

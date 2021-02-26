@@ -5,19 +5,19 @@ nwdiag {
 network admin {
 
 address = "IP:10.10.0.0/24"
-        nuc1 [address="10.10.0.1/enp0s25"];
-        nuc2 [address="10.10.0.2/enp0s25"];
-        nuc3 [address="10.10.0.3/enp0s25"];
-        nuc4 [address="10.10.0.4/enp0s25"];
-        nuc5 [address="10.10.0.5/enp0s25"];
+        nuc1 [address="10.10.0.1/ensA"];
+        nuc2 [address="10.10.0.2/ensA"];
+        nuc3 [address="10.10.0.3/ensA"];
+        nuc4 [address="10.10.0.4/ensA"];
+        nuc5 [address="10.10.0.5/ensA"];
 }
 
 network data {
 address = "IP:10.10.1.0/24"
-        nuc1 [address="10.10.1.1/enx503eaa3bcb9c"];
-        nuc2 [address="10.10.1.2/enx503eaa3bcab8"];
-        nuc3 [address="10.10.1.3/enx503eaa31b0cd"];
-        nuc4 [address="10.10.1.4/enx503eaa31b0ef"];
+        nuc1 [address="10.10.1.1/ensI"];
+        nuc2 [address="10.10.1.2/ensI"];
+        nuc3 [address="10.10.1.3/ensI"];
+        nuc4 [address="10.10.1.4/ensI"];
 }
 
 }
