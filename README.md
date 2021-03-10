@@ -32,7 +32,16 @@ If you encounter python-version related errors, we recommend you to either:
       * add `export PYTHONPATH="$PYTHONPATH:/usr/bin/python3"`
     * source ~/.bashrc 
 
+* On the router machines (nuc2)
+  * Activate `ip_forward`
+    * Edit the `/etc/sysctl.conf` and make sure that the following line is uncommented: 
+      * `net.ipv4.ip_forward = 1`
+    * You can check that the change if effective as follows: 
+      * `cat /proc/sys/net/ipv4/ip_forward`
+      * The output should be `1` 
+
 Five NUCs are exploited and the network architecture is showed below.
+
 Each NUC exploits `Ubuntu 20.04` with the username `star` and the root password `azerty123`.
 
 ## Network details
@@ -40,9 +49,10 @@ Each NUC exploits `Ubuntu 20.04` with the username `star` and the root password 
 ![Network architecture](nuc-archi.png)
 
 The network is configured using `netplan`.
-`netplan` configuration files are located at `/etc/netplan/*` for each machines.
-If it is modified, the configuration can be applied using :
-`sudo netplan apply` 
+  * `netplan` configuration files are located at `/etc/netplan/*` for each machines.
+
+If the file is modified, the configuration can be applied using :
+  * `sudo netplan apply` 
 
 <details><summary>netplan file for nuc1</summary>
 
