@@ -73,7 +73,7 @@ network:
 
 </details>
 
-<details><summary><netplan file for nuc2</summary>
+<details><summary>netplan file for nuc2</summary>
 
 ```
 network:
@@ -105,7 +105,7 @@ network:
 
 </details>
 
-<details><summary><netplan file for nuc3</summary>
+<details><summary>netplan file for nuc3</summary>
 
 ```
 network:
@@ -135,7 +135,7 @@ network:
 
 </details>
 
-<details><summary><netplan file for nuc4</summary>
+<details><summary>netplan file for nuc4</summary>
 
 ```
 network:
@@ -154,7 +154,7 @@ network:
 
 </details>
 
-<details><summary><netplan file for nuc5</summary>
+<details><summary>netplan file for nuc5</summary>
 
 ```
 network:
