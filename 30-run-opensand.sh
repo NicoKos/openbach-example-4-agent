@@ -6,7 +6,7 @@ echo "#########################################"
 echo "Executor OpenSAND Net Conf"
 echo "#########################################"
 
-python3 executor_opensand_net_conf.py --controller 10.10.0.4 --login openbach --password openbach fournuc  
+python3 executor_opensand_net_conf.py -h
 
 echo "#########################################"
 echo "Executor OpenSAND Satcom Conf"
@@ -24,7 +24,7 @@ echo "#########################################"
 echo "Executor OpenSAND Net Conf"
 echo "#########################################"
 
-python3 executor_opensand_net_conf.py --controller 10.10.0.4 --login openbach --password openbach fournuc --clear --entity  
+python3 executor_opensand_net_conf.py -h
 
 cd ../examples/
 
