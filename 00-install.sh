@@ -20,7 +20,6 @@ echo ""
 echo "################################################"
 cd openbach/ 
 git checkout dev
-git merge origin/dev-repository-list
 git pull
 cd ../
 cd openbach-extra/
