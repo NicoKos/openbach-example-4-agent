@@ -1,5 +1,5 @@
 [controller]
-10.10.0.4 openbach_name=ctrl
+10.10.0.5 openbach_name=ctrl
 
 [agent]
 10.10.0.1 openbach_name=nuc1
