@@ -40,150 +40,162 @@ then
 
 	if [[$MODE == "apply"]]
 	then
+		echo "a- GEO-backhaul"
+		echo "b- MEO-backhaul"
+		echo "c- 5G through LEO - SR from RAN"
+		echo "d-5G through LEO - SR from regenerative satellit"
+		echo "e-GEO access and WiFi"
+		echo "f- Secured tunnel"
 		read -p 'choose scenario : ' scenario
+		read -p 'with losses ? [y/n]' losses
+		case losses in
+			y)
+				LOSS = 1
+			n)
+				LOSS = 0
 		case scenario in
-			1) 
+			a) 
 				echo " GEO-backhaul"
 				 	#nuc1-ensI1
                 		nuc1EnsI1Datarate = 50M
                 		nuc1EnsI1LossType = random
-                		nuc1EnsI1LossRate = 0
-                		nuc1EnsI1Delay = 350
+                		nuc1EnsI1LossRate = 1*LOSS
+                		nuc1EnsI1Delay = 270
 
                         		#nuc2-ensI1
                			nuc2EnsI1Datarate = 10M
                 		nuc2EnsI1LossType = random
-                		nuc2EnsI1LossRate = 0
-               			nuc2EnsI1Delay = 530
+                		nuc2EnsI1LossRate = 1*LOSS
+               			nuc2EnsI1Delay = 270
                         		#nuc2-ensI2
                 		nuc2EnsI2Datarate = 50M
                 		nuc2EnsI2LossType = random
-                		nuc2EnsI2LossRate = 1
+                		nuc2EnsI2LossRate = 1*LOSS
                 		nuc2EnsI2Delay = 7
                         		#nuc3-ensI2
                 		nuc3EnsI2Datarate = 10M
                 		nuc3EnsI2LossType = random
-        	        	nuc3EnsI2LossRate = 1
+        	        	nuc3EnsI2LossRate = 1*LOSS
 	                	nuc3EnsI2Delay = 7
-			2)
+			b)
                                 echo " MEO-backhaul"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 0
-                                nuc1EnsI1Delay = 330
+                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1Delay = 180
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 0
-                                nuc2EnsI1Delay = 330
+                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1Delay = 180
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
 				nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 0
+                                nuc2EnsI2LossRate = 1*LOSS
                                 nuc2EnsI2Delay = 7
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 0
+                                nuc3EnsI2LossRate = 1*LOSS
                                 nuc3EnsI2Delay = 7
 
-			3)
+			c)
                                 echo " 5G through LEO - SR from RAN"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 0
-                                nuc1EnsI1Delay = 30
+                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1Delay = 20
 
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 0
-                                nuc2EnsI1Delay = 30
+                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1Delay = 20
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1
-                                nuc2EnsI2Delay = 120
+                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2Delay = 45
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1
-                                nuc3EnsI2Delay = 120
+                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2Delay = 45
 
-			4)
+			d)
                                 echo " 5G through LEO - SR from regenerative satellite"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 0
-                                nuc1EnsI1Delay = 90
+                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1Delay = 45
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 0
-                                nuc2EnsI1Delay = 90
+                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1Delay = 45
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1
-                                nuc2EnsI2Delay = 60
+                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2Delay = 20
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1
-                                nuc3EnsI2Delay = 60
+                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2Delay = 20
 
-			5)
+			e)
                                 echo " GEO access and WiFi"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 0
-                                nuc1EnsI1Delay = 530
+                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1Delay = 270
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 0
-                                nuc2EnsI1Delay = 530
+                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1Delay = 270
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 2
+                                nuc2EnsI2LossRate = 1*LOSS
                                 nuc2EnsI2Delay = 7
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 2
+                                nuc3EnsI2LossRate = 1*LOSS
                                 nuc3EnsI2Delay = 7
-			6)
+			f)
                                 echo " Secured tunnel"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 0
+                                nuc1EnsI1LossRate = 1*LOSS
                                 nuc1EnsI1Delay = 30
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 0
+                                nuc2EnsI1LossRate = 1*LOSS
                                 nuc2EnsI1Delay = 30
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1
-                                nuc2EnsI2Delay = 515
+                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2Delay = 255
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1
-                                nuc3EnsI2Delay = 515
+                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2Delay = 255
 
 
 		esac
