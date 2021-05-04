@@ -59,46 +59,46 @@ then
 				 	#nuc1-ensI1
                 		nuc1EnsI1Datarate = 50M
                 		nuc1EnsI1LossType = random
-                		nuc1EnsI1LossRate = 1*LOSS
+				nuc1EnsI1LossRate = $(0*$LOSS)
                 		nuc1EnsI1Delay = 270
 
                         		#nuc2-ensI1
                			nuc2EnsI1Datarate = 10M
                 		nuc2EnsI1LossType = random
-                		nuc2EnsI1LossRate = 1*LOSS
+				nuc2EnsI1LossRate = $(0*$LOSS)
                			nuc2EnsI1Delay = 270
                         		#nuc2-ensI2
                 		nuc2EnsI2Datarate = 50M
                 		nuc2EnsI2LossType = random
-                		nuc2EnsI2LossRate = 1*LOSS
+                		nuc2EnsI2LossRate = $(1*$LOSS)
                 		nuc2EnsI2Delay = 7
                         		#nuc3-ensI2
                 		nuc3EnsI2Datarate = 10M
                 		nuc3EnsI2LossType = random
-        	        	nuc3EnsI2LossRate = 1*LOSS
+        	        	nuc3EnsI2LossRate = $(1*$LOSS)
 	                	nuc3EnsI2Delay = 7
 			b)
                                 echo " MEO-backhaul"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1LossRate = $(0*$LOSS)
                                 nuc1EnsI1Delay = 180
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1LossRate = $(0*$LOSS)
                                 nuc2EnsI1Delay = 180
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
 				nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2LossRate = $(1*$LOSS)
                                 nuc2EnsI2Delay = 7
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2LossRate = $(1*$LOSS)
                                 nuc3EnsI2Delay = 7
 
 			c)
@@ -106,24 +106,24 @@ then
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1LossRate = $(0*$LOSS)
                                 nuc1EnsI1Delay = 20
 
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1LossRate = $(0*$LOSS)
                                 nuc2EnsI1Delay = 20
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2LossRate = $(1*$LOSS)
                                 nuc2EnsI2Delay = 45
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2LossRate = $(1*$LOSS)
                                 nuc3EnsI2Delay = 45
 
 			d)
@@ -131,23 +131,23 @@ then
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1LossRate = $(0*$LOSS)
                                 nuc1EnsI1Delay = 45
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1LossRate = $(0*$LOSS)
                                 nuc2EnsI1Delay = 45
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2LossRate = $(1*$LOSS)
                                 nuc2EnsI2Delay = 20
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2LossRate = $(1*$LOSS)
                                 nuc3EnsI2Delay = 20
 
 			e)
@@ -155,46 +155,46 @@ then
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1LossRate = $(0*$LOSS)
                                 nuc1EnsI1Delay = 270
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1LossRate = $(0*$LOSS)
                                 nuc2EnsI1Delay = 270
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2LossRate = $(1*$LOSS)
                                 nuc2EnsI2Delay = 7
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1*LOSS
+                                nuc3EnsI2LossRate = $(1*$LOSS)
                                 nuc3EnsI2Delay = 7
 			f)
                                 echo " Secured tunnel"
                                         #nuc1-ensI1
                                 nuc1EnsI1Datarate = 50M
                                 nuc1EnsI1LossType = random
-                                nuc1EnsI1LossRate = 1*LOSS
+                                nuc1EnsI1LossRate = $(0*$LOSS)
                                 nuc1EnsI1Delay = 30
 
                                         #nuc2-ensI1
                                 nuc2EnsI1Datarate = 10M
                                 nuc2EnsI1LossType = random
-                                nuc2EnsI1LossRate = 1*LOSS
+                                nuc2EnsI1LossRate = $(0*$LOSS)
                                 nuc2EnsI1Delay = 30
                                         #nuc2-ensI2
                                 nuc2EnsI2Datarate = 50M
                                 nuc2EnsI2LossType = random
-                                nuc2EnsI2LossRate = 1*LOSS
+                                nuc2EnsI2LossRate = $(1*$LOSS)
                                 nuc2EnsI2Delay = 255
                                         #nuc3-ensI2
                                 nuc3EnsI2Datarate = 10M
                                 nuc3EnsI2LossType = random
-                                nuc3EnsI2LossRate = 1*LOSS
+				nuc3EnsI2LossRate = $(1*$LOSS)
                                 nuc3EnsI2Delay = 255
 
 
