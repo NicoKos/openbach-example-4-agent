@@ -203,8 +203,8 @@ then
 	echo "------------------------------"
 	echo "$MODE limits on interfaces"
 	echo "------------------------------"
-	
-#from 1 to 2
+
+	cd ../openbach-extra/executors/references
 	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc1 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $NUC1_ensI1_datarate --lm $NUC1_ensI1_loss_type --lmp $NUC1_ensI1_loss_rate --delay $NUC1_ensI1_delay run
  
 
