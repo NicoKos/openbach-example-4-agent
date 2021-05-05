@@ -9,7 +9,7 @@ then
 	exit 1
 fi
 
-if [ $MODE == "clear" ] || [ $MODE =="apply" ]
+if [ $MODE == clear ] || [ $MODE =="apply" ]
 then
 	if [ $MODE =="clear" ]
 	then
