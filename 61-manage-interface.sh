@@ -4,16 +4,16 @@ MODE=$1
 SCEN=$2
 LOSS=$3
 
-if [[ $MODE != "clear" ]] && [[ $MODE != "apply" ]]
+if [ $MODE != "clear" ] && [ $MODE != "apply" ]
 then
 	echo "Wrong entry"
 	echo "Choose clear or apply MODE"
 	exit 1
 fi
 
-if [[ $MODE == "clear" ]] || [[ $MODE == "apply" ]]
+if [ $MODE = "clear" ] || [ $MODE = "apply" ]
 then
-	if [[ $MODE == "clear" ]]
+	if [ $MODE = "clear" ]
 	then
 			#nuc1-ensI1
 		nuc1EnsI1Datarate="1G" 
@@ -40,7 +40,7 @@ then
 		
 	fi
 
-	if [[ $MODE == "apply" ]]
+	if [ $MODE = "apply" ]
 	then
 		echo "a- GEO-backhaul"
 		echo "b- MEO-backhaul"
@@ -238,18 +238,19 @@ then
 
 
 	cd ../openbach-extra/executors/references
-	#python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc1 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $NUC1_ensI1_datarate --lm $NUC1_ensI1_loss_type --lmp $NUC1_ensI1_loss_rate --delay $NUC1_ensI1_delay run
+echo "from 1 to 2"
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc1 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $nuc1EnsI1Datarate --lm $nuc1EnsI1LossType --lmp $nuc1EnsI1LossRate --delay $nuc1EnsI1Delay run
  
 
 
-#from 2 to 1
-	#python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $NUC2_ensI1_datarate --lm $NUC2_ens1_loss_type --lmp $NUC2_ensI1_loss_rate --delay $NUC2_ensI1_delay run
+echo "from 2 to 1"
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $nuc2EnsI1Datarate --lm $nuc2EnsI1LossType --lmp $nuc2EnsI1LossRate --delay $nuc2EnsI1Delay run
 
-#from 2 to 3
-	#python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $NUC2_ensI2_datarate --lm $NUC2_ensI2_loss_type --lmp $NUC2_ensI2_loss_rate --delay $NUC2_ensI2_delay run
+echo "from 2 to 3"
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc2EnsI2Datarate --lm $nuc2EnsI2LossType --lmp $nuc2EnsI2Lossrate --delay $nuc2EnsI2Delay run
 
 
-#from 3 to 2
-	#python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc3 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $NUC3_ensI2_datarate --lm $NUC3_ensI2_loss_type --lmp $NUC3_ensI2_loss_rate --delay $NUC3_ensI2_delay run
+echo "from 3 to 2"
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc3 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc3EnsI2Datarate --lm $nuc3EnsI2LossType --lmp $nuc3EnsI2Lossrate --delay $nuc3EnsI2Delay run
 
 fi
