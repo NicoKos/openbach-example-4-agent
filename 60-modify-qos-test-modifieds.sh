@@ -6,13 +6,13 @@ echo "------------------------------"
 echo "clear interfaces"
 echo "------------------------------"
 
-sh 61-manage-interface.sh clear
+sh 61-manage-interface.sh "clear"
 
 echo "------------------------------"
 echo "set limits on interfaces"
 echo "------------------------------"
 	
-sh 61-manage-interface.sh apply
+sh 61-manage-interface.sh "apply"
 
 echo "------------------------------"
 echo "test settings"
@@ -24,4 +24,4 @@ echo "------------------------------"
 echo "clear interfaces"
 echo "------------------------------"
 
-sh 61-manage-interface.sh clear
+sh 61-manage-interface.sh "clear"
