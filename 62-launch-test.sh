@@ -2,7 +2,7 @@
 
 cd ../openbach-extra/executors/references
 
-$rep=$1
+rep=$1
 
 #read -p 'results repository : ' rep
 

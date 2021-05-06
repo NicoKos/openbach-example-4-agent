@@ -247,10 +247,10 @@ echo "from 2 to 1"
 	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI1  --mode egress --operation $MODE --bandwidth $nuc2EnsI1Datarate --lm $nuc2EnsI1LossType --lmp $nuc2EnsI1LossRate --delay $nuc2EnsI1Delay run
 
 echo "from 2 to 3"
-	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc2EnsI2Datarate --lm $nuc2EnsI2LossType --lmp $nuc2EnsI2Lossrate --delay $nuc2EnsI2Delay run
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc2 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc2EnsI2Datarate --lm $nuc2EnsI2LossType --lmp $nuc2EnsI2LossRate --delay $nuc2EnsI2Delay run
 
 
 echo "from 3 to 2"
-	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc3 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc3EnsI2Datarate --lm $nuc3EnsI2LossType --lmp $nuc3EnsI2Lossrate --delay $nuc3EnsI2Delay run
+	python3 executor_network_configure_link.py --controller 10.10.0.5 --login openbach --password openbach fournuc --entity nuc3 --ifaces ensI2  --mode egress --operation $MODE --bandwidth $nuc3EnsI2Datarate --lm $nuc3EnsI2LossType --lmp $nuc3EnsI2LossRate --delay $nuc3EnsI2Delay run
 
 fi
