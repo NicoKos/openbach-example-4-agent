@@ -11,8 +11,8 @@ ansible --version
 echo "################################################"
 echo "Cloning the openbach and openbach-extra repositories"
 cd ../
-git clone https://forge.net4sat.org/openbach/openbach.git
-git clone https://forge.net4sat.org/openbach/openbach-extra.git
+git clone https://github.com/CNES/openbach/openbach.git
+git clone https://github.com/CNES/openbach-extra/openbach-extra.git
 echo "################################################"
 echo ""
 
